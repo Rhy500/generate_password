@@ -1,35 +1,64 @@
 # generate_password
 
-PASSWORD GENERATOR PROGRAM REPORT
-1. Purpose of the Program
-This program is designed to generate a random password with a user-defined length. The password consists of a combination of uppercase and lowercase letters, digits, and special characters. The default password length is 12 characters if no input is provided, and the recommended minimum length is 8 characters.
+# 🔐 Password Generator Program Report
 
-2. Code Description
-The code uses the following modules:
+## 1. Purpose of the Program
 
-random – to randomly select characters.
+This program is designed to generate a random password with a user-defined length. The password consists of a combination of:
 
-string – to access predefined character sets (letters, digits, punctuation).
+- Uppercase and lowercase letters
+- Digits
+- Special characters
 
-Function: gen(length)
-This function generates a random password string of a specified length using the character set.
+If no input is provided, the default password length is **12 characters**, and the recommended **minimum length is 8 characters**.
 
-Function: main()
-Prompts the user to input the desired password length.
+---
 
-If no input is provided, the default is set to 12 characters.
+## 2. Code Description
 
-If the length is less than 8, a warning is displayed.
+The program uses the following Python modules:
 
-If the input is not a number, an error message is shown.
+- `random` – to randomly select characters
+- `string` – to access predefined character sets (letters, digits, punctuation)
 
-The generated password is printed to the console.
+### 🔧 Function: `gen(length)`
 
-3. Execution Frequency
-The password generation is not limited to a fixed number of times. Users can run the program:
+Generates a random password string of the specified length using the full character set.
 
-As many times as they want.
+### 🧩 Function: `main()`
 
-Each time, it will generate a unique random password.
+- Prompts the user to input the desired password length.
+- If no input is provided, sets the default length to 12.
+- If the input length is less than 8, displays a warning.
+- If the input is not a valid number, shows an error message.
+- Displays the generated password on the screen.
 
-There is no limit on how often the gen() function can be used.
+---
+
+## 3. Execution Frequency
+
+There is **no limit** on how many times the password can be generated. Users can run the program:
+
+- As many times as they want
+- Each run will produce a **new, unique password**
+
+The `gen()` function is reusable and can be executed in any loop or user session without restrictions.
+
+---
+
+## 📌 Example Output
+
+```bash
+Input: 10
+Output: your password is : T8@h2Zk1!P
+
+Input: 10
+Output: your password is : r#8T6mPwZQ
+
+
+----
+## How to Run the Program
+
+You have to download python, and if you want to run it, open terminal or cmd
+```bash
+python pass1.py
